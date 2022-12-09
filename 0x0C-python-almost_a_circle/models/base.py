@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Defines a base model class."""
 import json
 import csv
@@ -6,12 +7,12 @@ import turtle
 
 
 class Base:
-    """Represent the base model.
+    """Base model.
 
-    Represents the "base" for all other classes in project 0x0C*.
+    This Represents the "base" for all other classes in project 0x0C*.
 
-    Attributes:
-        __nb_objects (int): The number of instantiated Bases.
+    Private Class Attributes:
+        __nb_object (int): Number of instantiated Bases.
     """
 
     __nb_objects = 0
@@ -70,7 +71,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """Return a class instantiated from a dictionary of attributes.
+        """Return a class instantied from a dictionary of attributes.
 
         Args:
             **dictionary (dict): Key/value pairs of attributes to initialize.
